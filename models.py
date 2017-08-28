@@ -1,7 +1,11 @@
 from datetime import datetime as dt
 from peewee import *
+import psycopg2
+import os
+from playhouse.db_url import connect
 
-db = SqliteDatabase('notes.db')
+
+db = connect(os.environ.get('DATABASE_URL'))
 
 
 class BaseModel(Model):
