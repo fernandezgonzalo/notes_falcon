@@ -32,4 +32,5 @@ class Note(BaseModel):
             "notebook": self.notebook.id
         }
 
-
+Notebook.create_table(fail_silently=True)
+Note.create_table(fail_silently=True)

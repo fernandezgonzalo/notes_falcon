@@ -1,2 +1,2 @@
-ipython3
+ipython
 
