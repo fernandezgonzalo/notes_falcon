@@ -2,3 +2,4 @@ peewee
 graceful
 falcon
 gunicorn
+psycopg2
